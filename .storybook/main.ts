@@ -18,6 +18,9 @@ const config: StorybookConfig = {
   docs: {
     autodocs: 'tag',
   },
+  core: {
+    builder: '@storybook/builder-vite',
+  },
   viteFinal: (config) =>
     mergeConfig(config, {
       plugins: [svgr({ include: '**/*.svg' })],
