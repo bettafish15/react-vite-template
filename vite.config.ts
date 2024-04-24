@@ -12,7 +12,7 @@ export default defineConfig({
             exclude: [/virtual:/, /node_modules/, 'build'],
         }),
         tsconfigPaths(),
-        svgr(),
+        svgr({ include: '**/*.svg' }),
     ],
     server: {
         open: true,
